@@ -42,6 +42,16 @@ const MODES = [
     border: 'rgba(251,191,36,0.55)',
     bg: 'rgba(245,158,11,0.18)',
   },
+  {
+    path: '/board',
+    icon: '🎲',
+    label: 'Plateau',
+    sub: 'NPCs musicaux · Style Mario · 30 cases',
+    accent: '#ec4899',
+    glow: 'rgba(236,72,153,0.45)',
+    border: 'rgba(236,72,153,0.55)',
+    bg: 'rgba(219,39,119,0.18)',
+  },
 ];
 
 const STATS = [
@@ -164,7 +174,7 @@ export default function Home() {
       )}
 
       {/* ── Mode cards ── */}
-      <div id="modes" className="relative z-10 grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl stagger">
+      <div id="modes" className="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-2xl stagger">
         {MODES.map(m => (
           <button
             key={m.path}

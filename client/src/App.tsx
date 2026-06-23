@@ -9,6 +9,7 @@ import CareerGame from './pages/CareerGame';
 import FreePlay from './pages/FreePlay';
 import QRAccess from './pages/QRAccess';
 import Admin from './pages/Admin';
+import BoardGame from './pages/BoardGame';
 import AccessGate from './components/AccessGate';
 
 export default function App() {
@@ -37,6 +38,7 @@ function AppRoutes() {
             <Route path="/career" element={<Career />} />
             <Route path="/career/play/:campaignId/:levelId" element={<CareerGame />} />
             <Route path="/free" element={<FreePlay />} />
+            <Route path="/board" element={<BoardGame />} />
             <Route path="/qr" element={<QRAccess />} />
           </Routes>
         </AccessGate>
